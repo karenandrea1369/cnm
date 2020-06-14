@@ -3,9 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
     <title>Colombia nuestra meta</title>
 </head>
 <body>
-    <h1>Página en proceso</h1>
+    <div class="firstScreen">
+        <div class="firstScreen__logo">
+            <img src="/sources/logo_cnm.png" alt="">
+        </div>
+        <div class="firstScreen__info">
+            <h1>El cambio sobre ruedas</h1>
+            <p>Ayuda a niños y jóvenes a transformar su vida a través de la magia de la bicicleta</p>
+            <button>¡Quiero ayudar!</button>
+        </div>
+    </div>
+    <div class="projects">
+
+        <div class="projects__description description">
+            <h1>Nuestros proyectos</h1>
+            <p>La bicicleta como herramienta de cambio</p>
+        </div>
+
+        <div class="projects__redes oneColumn">
+            <img src="/sources/logo_redes.png" alt="">
+            <h1>Redes</h1>
+            <p>Ayudamos al desarrollo integral de niños, niñas y jóvenes de comunidades vulnerables, en los aspectos físico, mental y social a través del ciclismo</p>
+        </div>
+
+        <div class="projects__threeprojects">
+            <div class="projects__laTravesiaSocial threeColumns">
+                <img src="/sources/logo_cnm.png" alt="">
+                <h1>La travesía social</h1>
+                <p>Recorremos los lugares más vulnerables de Colombia mostrando a través del ejemplo el ciclismo como estilo de vida y oportunidad de superación</p>
+            </div>
+
+            <div class="projects__farallones threeColumns">
+                <img src="/sources/logo_farallones.png" alt="">
+                <h1>Farallones</h1>
+                <p>Promovemos la conservación del agua en la cuenca alta del Río Cali mediante el trabajo social de jóvenes campesinos tomando el deporte como eje principal de su formación y el rescate de sus valores.</p>
+            </div>
+
+            <div class="projects__biciclaje threeColumns">
+                <img src="/sources/logo_biciclaje.png" alt="">
+                <h1>Biciclaje</h1>
+                <p>Recolectamos y acondicionamos bicicletas y repuestos en desuso para ser utilizados en los programas que vinculan a niños, niñas y jóvenes de comunidades vulnerables del país</p>
+            </div>
+        </div>
+
+        <div class="projects__description description">
+            <h1>Apuntamos alto</h1>
+            <p>Nuestro próximo proyecto</p>
+        </div>
+
+        <div class="projects__caminoRealPanam oneColumn">
+            <img src="/sources/logo_redes.png" alt="">
+            <h1>Camino Real Panamericano</h1>
+            <p>Sistema arterial que transporta al "caminante" a descubrirse a si mismo, inmerso en las obras maestras de la naturaleza, la historia, la arquitectura y la cultura Americana.</p>
+        </div>
+    </div>
+
+    <div class="testimonies">
+
+        <div class="testimonies__description description">
+            <h1>Testimonios</h1>
+            <p>Algunas de nuestras experiencias</p>
+        </div>
+
+        <div class="testimonies__threetestimonies">
+            <div class="testimonies__testimonieOne threeColumns">
+                <img src="/sources/logo_cnm.png" alt="">
+                <h1>Persona 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus velit ducimus laudantium voluptatibus enim mollitia magni incidunt harum explicabo error.</p>
+            </div>
+
+            <div class="testimonies__testimonieTwo threeColumns">
+                <img src="/sources/logo_farallones.png" alt="">
+                <h1>Persona 2</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus velit ducimus laudantium voluptatibus enim mollitia magni incidunt harum explicabo error.</p>
+            </div>
+
+            <div class="testimonies__testimonieThree threeColumns">
+                <img src="/sources/logo_biciclaje.png" alt="">
+                <h1>Persona 3</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus velit ducimus laudantium voluptatibus enim mollitia magni incidunt harum explicabo error.</p>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+
+        <div class="contact__description description">
+            <h1>¿Te conectaste con alguna de nuestras iniciativas?</h1>
+            <p>¡Tienes algo que aportar!</p>
+        </div>
+
+        
+
+        <div class="contact__formContainer oneColumn">
+            <h1>Déjanos tus datos</h1>
+            <form method="post" name="myemailform" action="/scripts/form-to-email.php">
+
+                Nombre completo: <input type="text" name="name">
+                
+                Correo electrónico: <input type="text" name="email">
+                
+                Mensaje: <textarea name="message"></textarea>
+                
+                <input type="submit" value="Enviar">
+                
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+    
 </body>
 </html>

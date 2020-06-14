@@ -1,0 +1,23 @@
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+/*--------------------- Firs Screen ---------------------*/
+
+.firstScreen{
+    background-image: url("/sources/1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.firstScreen__logo{
+    width: 100%;
+    height: 20%;
+}
+
+.firstScreen__logo img{
+    height: 90%;
+}
