@@ -60,7 +60,7 @@ body{
     font-family: Lato Light;
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 18px;
     color: #00436D;
 }
 
@@ -73,6 +73,8 @@ body{
     font-size: 30px;
     color: #00436D;
 }
+
+/*--------------------- One Column Box ---------------------*/
 
 .oneColumnBox{
     background-color: white;
@@ -99,6 +101,32 @@ body{
 
 .oneColumnBox__img img{
     width: 100%;
+}
+
+/*--------------------- Three Columns ---------------------*/
+
+.threeColumns{
+    margin: 45px;
+    background-color: white;
+    box-shadow: 4px 4px 8px rgba(150, 150, 150, 0.25), -4px -4px 8px rgba(150, 150, 150, 0.25);
+    width: 22%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.threeColumns__img{
+    width: 100%;
+    height: 50%;
+}
+
+.threeColumns__img img{
+    width: 100%;
+    height: 100%;
+}
+
+.threeColumns__text{
+    text-align: center;
 }
 
 /*--------------------- Firs Screen ---------------------*/
@@ -151,4 +179,41 @@ body{
 .projects__tittle{
     width: 100%;
     padding: 40px 0px 0px 100px;
+}
+
+.projects__threeprojects{
+    display: flex;
+    justify-content: center;
+}
+
+.projects__newProject{
+    background-color: #EBEEF1;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.projects__caminoRealPanam{
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 40px;
+    background-image: url("/sources/caminoRealPanamericanoFondo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px;
+    box-shadow: 4px 4px 8px rgba(150, 150, 150, 0.25), -4px -4px 8px rgba(150, 150, 150, 0.25);
+}
+
+.testimonies{
+    width: 100%;
+}
+
+.testimonies__tittle{
+    width: 100%;
+    padding: 40px 0px 0px 100px;
+}
+
+.testimonies__threetestimonies{
+    display: flex;
+    justify-content: center;
 }
