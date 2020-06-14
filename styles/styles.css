@@ -10,6 +10,9 @@ body{
 }
 
 .ctaButton{
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
     background: none;
     border: none;
     background-color: #ED3636;
@@ -19,6 +22,83 @@ body{
     font-size: 25px;
     color: white;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.ctaButton:hover{
+    background-color: #D92121;
+}
+
+.bigTittle{
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    color: white;
+    line-height: 80%;
+}
+
+.mediumTittle{
+    margin: 0px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    color: #426485;
+}
+
+.smallTittle{
+    margin: 0;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: #00436D;
+}
+
+.text{
+    font-family: Lato Light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    color: #00436D;
+}
+
+.whitebgText{
+    font-family: Lato Light;
+    font-style: normal;
+    font-weight: 300;
+    background-color: white;
+    font-weight: 40px;
+    font-size: 30px;
+    color: #00436D;
+}
+
+.oneColumnBox{
+    background-color: white;
+    width: 80%;
+    height: 300px;
+    display: flex;
+    margin: 40px auto;
+    box-shadow: 4px 4px 8px rgba(150, 150, 150, 0.25), -4px -4px 8px rgba(150, 150, 150, 0.25);
+}
+
+.oneColumnBox__text{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+}
+
+.oneColumnBox__img{
+    width: 60%;
+}
+
+.oneColumnBox__img img{
+    width: 100%;
 }
 
 /*--------------------- Firs Screen ---------------------*/
@@ -50,23 +130,25 @@ body{
 .firstScreen__infoTittle{
     width: 40%;
     margin: 0px;
-    font-size: 80px;
-    color: white;
-    line-height: 80%;
 }
 
 .firstScreen__infoText{
-    background-color: white;
     width: 50%;
     margin: 0px;
     margin-top: 30px;
-    font-family: Arial;
-    font-weight: 40px;
-    font-size: 30px;
-    color: #00436D;
-    line-height: 80%;
 }
 
 .firstScreen__infoButton{
     margin-top: 30px;
+}
+
+/*--------------------- Projects ---------------------*/
+
+.projects{
+    width: 100%;
+}
+
+.projects__tittle{
+    width: 100%;
+    padding: 40px 0px 0px 100px;
 }
