@@ -140,6 +140,7 @@ form{
     width: 80%;
     height: 300px;
     min-width: 300px;
+    min-height: 300px;
     display: flex;
     margin: 40px auto;
     box-shadow: 4px 4px 8px rgba(150, 150, 150, 0.25), -4px -4px 8px rgba(150, 150, 150, 0.25);
@@ -296,6 +297,39 @@ form{
     font-size: 16px;
 }
 
+/*--------------------- Participations ---------------------*/
+
+.participations{
+    padding-bottom: 40px;
+}
+
+.participations__content{
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 40px;
+    background-image: url("/sources/participationsImg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px;
+    box-shadow: 4px 4px 8px rgba(150, 150, 150, 0.25), -4px -4px 8px rgba(150, 150, 150, 0.25);
+
+}
+
+.participations__tittle{
+    width: 100%;
+    padding: 0px;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.participations__contentText{
+    width: fit-content;
+    margin: 0px;
+}
+
 /*--------------------- Contact ---------------------*/
 
 .contact{
@@ -318,12 +352,22 @@ form{
     height: 450px;
 }
 
+.contact__containerTittle{
+    margin-bottom: 20px;
+}
+
+.contact__containerText{
+    margin: 10px;
+    font-size: 25px;
+}
+
+
 .contact__containerForm{
-    text-align: left;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
 }
 
 /*--------------------- Footer ---------------------*/
@@ -348,16 +392,17 @@ form{
 }
 
 .footer__socialMedia{
-    width: 10%;
-    height: 20%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    width: fit-content;
+    height: 30%;
+    margin-top: 15px;
+    margin-bottom: 15px;
     display: flex;
     justify-content: space-evenly;
 }
 
 .footer__socialMedia img{
     height: 100%;
+    margin: 0px 10px;
 }
 
 
@@ -434,7 +479,7 @@ form{
     .oneColumnBox__text{
         order: 2;
         width: 100%;
-        height: 50%;
+        height: 70%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -445,7 +490,7 @@ form{
     .oneColumnBox__img{
         order: 1;
         width: 100%;
-        height: 50%;
+        height: 30%;
     }
 
     .oneColumnBox__img img{
@@ -540,5 +585,15 @@ form{
 
     .contact__containerForm{
         text-align: center;
+    }
+
+    .contact__containerTittle{
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+    
+    .contact__containerText{
+        margin: 10px;
+        font-size: 25px;
     }
 }
