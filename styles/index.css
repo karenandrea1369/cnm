@@ -13,6 +13,10 @@ body{
     padding: 0px;
 }
 
+div{
+    overflow:hidden
+}
+
 .ctaButton{
     margin: 20px;
     font-family: Playfair Display;
@@ -159,6 +163,7 @@ form{
 
 .oneColumnBox__img img{
     width: 100%;
+        height: auto;
 }
 
 /*--------------------- Three Columns ---------------------*/
@@ -181,7 +186,7 @@ form{
 
 .threeColumns__img img{
     width: 100%;
-    height: 100%;
+        height: auto;
 }
 
 .threeColumns__text{
@@ -194,6 +199,7 @@ form{
     background-image: url("/sources/firstScreenImg.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
     height: 100%;
 }
@@ -262,6 +268,7 @@ form{
     background-image: url("/sources/caminoRealPanamericanoFondo.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     padding: 50px;
     box-shadow: 4px 4px 8px rgba(150, 150, 150, 0.25), -4px -4px 8px rgba(150, 150, 150, 0.25);
 }
@@ -283,6 +290,10 @@ form{
 .testimonies__threetestimonies{
     display: flex;
     justify-content: center;
+}
+
+.testimonies__personalInfo{
+    font-size: 16px;
 }
 
 /*--------------------- Contact ---------------------*/
@@ -413,7 +424,7 @@ form{
     .oneColumnBox{
         background-color: white;
         width: 60%;
-        height: 400px;
+        height: 450px;
         display: flex;
         flex-direction: column;
         margin: 40px auto;
@@ -439,6 +450,7 @@ form{
 
     .oneColumnBox__img img{
         width: 100%;
+        height: auto;
     }
 
     /*--------------------- Three Columns ---------------------*/
@@ -460,7 +472,7 @@ form{
 
     .threeColumns__img img{
         width: 100%;
-        height: 100%;
+        height: auto;
     }
 
     .threeColumns__text{
