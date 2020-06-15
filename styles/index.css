@@ -10,23 +10,49 @@ body{
 }
 
 .ctaButton{
+    margin: 20px;
     font-family: Playfair Display;
     font-style: normal;
     font-weight: bold;
     background: none;
     border: none;
     background-color: #ED3636;
-    width: 250px;
-    height: 60px;
+    padding: 10px 30px;
     border-radius: 60px;
     font-size: 25px;
     color: white;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
     cursor: pointer;
+    outline: none;
 }
 
 .ctaButton:hover{
     background-color: #D92121;
+}
+
+form{
+    width: 100%;
+}
+
+.textInput{
+    border: none;
+    border-radius: 3px;
+    background: #EBEEF1;
+    width: 90%;
+    height: 30px;
+    outline: none;
+    padding-left: 10px;
+}
+
+.textArea{
+    border: none;
+    border-radius: 3px;
+    background: #EBEEF1;
+    width: 90%;
+    height: 50px;
+    outline: none;
+    resize: none;
+    padding: 10px;
 }
 
 .bigTittle{
@@ -57,6 +83,7 @@ body{
 }
 
 .text{
+    margin: 10px;
     font-family: Lato Light;
     font-style: normal;
     font-weight: 300;
@@ -72,6 +99,15 @@ body{
     font-weight: 40px;
     font-size: 30px;
     color: #00436D;
+}
+
+.redText{
+    margin: 0px;
+    font-family: Lato Light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    color: #ED3636;
 }
 
 /*--------------------- One Column Box ---------------------*/
@@ -204,6 +240,8 @@ body{
     box-shadow: 4px 4px 8px rgba(150, 150, 150, 0.25), -4px -4px 8px rgba(150, 150, 150, 0.25);
 }
 
+/*--------------------- Testimonies ---------------------*/
+
 .testimonies{
     width: 100%;
 }
@@ -216,4 +254,31 @@ body{
 .testimonies__threetestimonies{
     display: flex;
     justify-content: center;
+}
+
+/*--------------------- Contact ---------------------*/
+
+.contact{
+    background-color: #EBEEF1;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 40px;
+
+}
+
+.contact__tittle{
+    width: 100%;
+    padding: 40px 0px 0px 100px;
+}
+
+.contact__container{
+    height: 450px;
+}
+
+.contact__containerForm{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
 }

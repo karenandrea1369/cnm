@@ -119,26 +119,34 @@
     </div>
     <div class="contact">
 
-        <div class="contact__description description">
-            <h1 class="mediumTittle">contáctanos</h1>
-            <p>¡Tienes algo que aportar!</p>
+        <div class="contact__tittle">
+            <h1 class="mediumTittle">Contáctanos</h1>
         </div>
 
-        
+        <div class="oneColumnBox contact__container">
 
-        <div class="contact__formContainer oneColumn">
-            <h1>Déjanos tus datos</h1>
-            <form method="post" name="myemailform" action="form-to-email.php">
+            <div class="oneColumnBox__text contact__containerForm">
+                <p class="redText">¿Te conectaste con alguna de nuestras iniciativas?</p>
+                <form method="post" name="myemailform" action="form-to-email.php">
 
-                Nombre completo: <input type="text" name="name">
-                
-                Correo electrónico: <input type="text" name="email">
-                
-                Mensaje: <textarea name="message"></textarea>
-                
-                <input type="submit" value="Enviar">
-                
-            </form>
+                    <p class="text">Nombre completo*:</p> 
+                    <input class="textInput" type="text" name="name">
+                    <br>
+                    <p class="text">Correo electrónico*:</p>
+                    <input class="textInput" type="text" name="email">
+                    <br>
+                    <p class="text">Mensaje:</p>
+                    <textarea class="textArea"  name="message"></textarea>
+                    <br>
+                    <input class="ctaButton" type="submit" value="Enviar">
+                    
+                </form>
+            </div>
+            <div class="oneColumnBox__img projects__redesimg">
+                <img src="/sources/6.png" alt="">
+            </div>
+
+            
         </div>
     </div>
     <div class="footer">
