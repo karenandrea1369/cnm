@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     width: 100%;
     height: 100vh;
@@ -132,6 +136,7 @@ form{
 }
 
 .oneColumnBox__text{
+    order: 1;
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -142,6 +147,7 @@ form{
 }
 
 .oneColumnBox__img{
+    order: 2;
     width: 60%;
 }
 
@@ -157,6 +163,7 @@ form{
     box-shadow: 4px 4px 8px rgba(150, 150, 150, 0.25), -4px -4px 8px rgba(150, 150, 150, 0.25);
     width: 22%;
     height: 400px;
+    min-width: 350px;
     display: flex;
     flex-direction: column;
 }
@@ -180,7 +187,7 @@ form{
 .firstScreen{
     background-image: url("/sources/1.png");
     background-size: cover;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     width: 100%;
     height: 100%;
 }
@@ -317,11 +324,119 @@ form{
 .footer__socialMedia{
     width: 10%;
     height: 20%;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-evenly;
 }
 
 .footer__socialMedia img{
     height: 100%;
+}
+
+
+/*--------------------- Media query ---------------------*/
+
+@media (max-width: 600px) {
+
+    .textInput{
+        background: white;
+    }
+    
+    .textArea{
+        background: white;
+    }
+
+    /*--------------------- One Column Box ---------------------*/
+
+    .oneColumnBox{
+        background-color: white;
+        width: 60%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        margin: 40px auto;
+        box-shadow: 4px 4px 8px rgba(150, 150, 150, 0.25), -4px -4px 8px rgba(150, 150, 150, 0.25);
+    }
+
+    .oneColumnBox__text{
+        order: 2;
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .oneColumnBox__img{
+        order: 1;
+        width: 100%;
+        height: 50%;
+    }
+
+    .oneColumnBox__img img{
+        width: 100%;
+    }
+
+    /*--------------------- Three Columns ---------------------*/
+
+    .threeColumns{
+        margin: 45px;
+        background-color: white;
+        box-shadow: 4px 4px 8px rgba(150, 150, 150, 0.25), -4px -4px 8px rgba(150, 150, 150, 0.25);
+        width: 60%;
+        height: 400px;
+        min-width: 350px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .threeColumns__img{
+        width: 100%;
+        height: 50%;
+    }
+
+    .threeColumns__img img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .threeColumns__text{
+        text-align: center;
+    }
+
+    /*--------------------- Projects ---------------------*/
+
+    .projects__threeprojects{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*--------------------- Testimonies ---------------------*/
+
+    .testimonies__threetestimonies{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*--------------------- Contact ---------------------*/
+
+    .contact{
+        height: 80%;
+    }
+
+    .contact__container{
+        background: none;
+        box-shadow: none;
+        width: 100%;
+        height: fit-content;
+        padding: 20px;
+        margin: 0px;
+    }
+
+    .contact__containerImg{
+        display: none;
+    }
 }
