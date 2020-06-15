@@ -130,6 +130,7 @@ form{
     background-color: white;
     width: 80%;
     height: 300px;
+    min-width: 300px;
     display: flex;
     margin: 40px auto;
     box-shadow: 4px 4px 8px rgba(150, 150, 150, 0.25), -4px -4px 8px rgba(150, 150, 150, 0.25);
@@ -163,7 +164,7 @@ form{
     box-shadow: 4px 4px 8px rgba(150, 150, 150, 0.25), -4px -4px 8px rgba(150, 150, 150, 0.25);
     width: 22%;
     height: 400px;
-    min-width: 350px;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
 }
@@ -187,7 +188,7 @@ form{
 .firstScreen{
     background-image: url("/sources/1.png");
     background-size: cover;
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
 }
@@ -347,6 +348,48 @@ form{
         background: white;
     }
 
+    .ctaButton{
+        margin: 20px;
+        padding: 5px 20px;
+        font-size: 20px;
+        color: white;
+    }
+    
+    .bigTittle{
+        font-size: 50px;
+    }
+    
+    .mediumTittle{
+        font-size: 30px;
+    }
+    
+    .smallTittle{
+        font-size: 25px;
+    }
+    
+    .text{
+        margin: 10px;
+        font-size: 16px;
+    }
+    
+    .whitebgText{
+        font-size: 20px;
+    }
+    
+    .redText{
+        font-size: 20px;
+    }
+    
+    .whiteText{
+        margin: 0px;
+        margin-top: 10px;
+        font-family: Lato Light;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+
     /*--------------------- One Column Box ---------------------*/
 
     .oneColumnBox{
@@ -388,7 +431,6 @@ form{
         box-shadow: 4px 4px 8px rgba(150, 150, 150, 0.25), -4px -4px 8px rgba(150, 150, 150, 0.25);
         width: 60%;
         height: 400px;
-        min-width: 350px;
         display: flex;
         flex-direction: column;
     }
@@ -405,6 +447,32 @@ form{
 
     .threeColumns__text{
         text-align: center;
+    }
+
+    /*--------------------- FirstScreen ---------------------*/
+
+    .firstScreen__logo{
+        width: 100%;
+        height: 15%;
+        padding: 30px 0px 0px 30px; 
+    }
+    
+    .firstScreen__logo img{
+        height: 100%;
+    }
+    
+    .firstScreen__info{
+        width: 100%;
+        height: 85%;
+        padding: 50px 0px 0px 60px; 
+    }
+    
+    .firstScreen__infoTittle{
+        width: 70%;
+    }
+
+    .firstScreen__infoText{
+        width: 60%;
     }
 
     /*--------------------- Projects ---------------------*/
@@ -438,5 +506,9 @@ form{
 
     .contact__containerImg{
         display: none;
+    }
+
+    .contact__containerForm{
+        text-align: center;
     }
 }
