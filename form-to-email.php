@@ -1,11 +1,25 @@
 <?php
 
+// var_dump($_POST);
+
 if (isset($_POST['submit'])) {
     $name = $_POST['name'];
     $visitor_email = $_POST['email'];
     $message = $_POST['message'];
 
-    $email_from = 'karenandrea12204@gmail.com';
+    
+    $to = "sebastiangaviria@outlook.com";
+
+    $email_subject = "Test mail";
+    $email_body = "Hello! This is a simple email message.";
+
+
+    $res = mail($to, $email_subject, $email_body . $message);
+
+    header("Location: /?res=$res"); /* Redirección del navegador */
+    exit;
+
+    $email_from = 'info@colombianuestrameta.com';
     $email_subject = "Prueba";
     $email_body = "You have received a new message from the user $name.\n".
                             "Here is the message:\n $message".
@@ -43,6 +57,10 @@ if (isset($_POST['submit'])) {
         exit;
     }
     
-    mail($to,$email_subject,$email_body,$headers);
+    $res = mail($to,$email_subject,$email_body,$headers);
+
+    header("Location: /?res=$res"); /* Redirección del navegador */
+    exit;
 }
+header("Location: /?res=false"); /* Redirección del navegador */
 ?>

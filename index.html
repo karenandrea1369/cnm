@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
     <title>Colombia nuestra meta</title>
 </head>
 <body>
@@ -13,24 +14,29 @@
         <div class="firstScreen__logo">
             <img src="/sources/logo_cnm.png" alt="">
         </div>
-        <div class="firstScreen__info">
-            <h1 class="bigTittle firstScreen__infoTittle">El cambio sobre ruedas</h1>
-            <p class="whitebgText firstScreen__infoText">Ayuda a niños y jóvenes a transformar su vida a través de la magia de la bicicleta</p>
-            <a href="#contact"> <button class="ctaButton firstScreen__infoButton">¡Quiero ayudar!</button> </a>
-            
+        <div class="firstScreen__content">
+            <div class="firstScreen__contentInfo">
+                <h1 class="bigTittle firstScreen__contentInfoTittle">El cambio sobre ruedas</h1>
+                <p class="mediumText firstScreen__contentInfoText">Ayuda a niños y jóvenes a transformar su vida a través de la magia de la bicicleta.</p>
+                <a href="#contact"> <button class="ctaButton firstScreen__contentInfoButton">¡Quiero ayudar!</button> </a>
+            </div>
+            <div class="firstScreen__contentImage">
+                <img src="/sources/landing.png" alt="">
+            </div>
         </div>
     </div>
+
     <div class="projects">
 
         <div class="projects__tittle">
-            <!-- <h1 class="mediumTittle">Nuestros proyectos</h1> -->
-            <img class="imgTittle" src="/sources/nuestrosProyectosImg.png" alt="">
+            <h1 class="mediumTittle">Nuestros proyectos</h1>
+            <!-- <img class="imgTittle" src="/sources/nuestrosProyectosImg.png" alt=""> -->
         </div>
 
         <div class="oneColumnBox projects__redes">
             <div class="oneColumnBox__text projects__redesText">
-                <h1 class="smallTittle">Redes</h1>
-                <p class="text">Ayudamos a formar mejores ciudadanos mediante el desarrollo integral de niños, niñas y jóvenes vulnerables, en los aspectos físico, mental y social a través del ciclismo.</p>
+                <img class="projectsLogo" src="/sources/logo_redes.png" alt="">
+                <p class="smallText">Tomando el ciclismo como eje, buscamos entregarle a la sociedad “buenos ciudadanos”, mediante el desarrollo integral de niños y jóvenes residentes en comunidades vulnerables, trabajando tres aspectos fundamentales: lo físico, lo mental y lo social.</p>
             </div>
             <div class="oneColumnBox__img projects__redesimg">
                 <img src="/sources/redesImg.png" alt="">
@@ -38,33 +44,33 @@
         </div>
 
         <div class="projects__threeprojects">
-            <div class="threeColumns projects__laTravesiaSocial">
-                <div class="threeColumns__img">
+            <div class="threeColumnsBox projects__laTravesiaSocial">
+                <div class="threeColumnsBox__img">
                     <img src="/sources/travesiaSocialImg.png" alt="">
                 </div>
-                <div class="threeColumns__text">
-                    <h1 class="smallTittle">La travesía social</h1>
-                    <p class="text">Recorremos los lugares más vulnerables de Colombia mostrando a través del ejemplo el ciclismo como estilo de vida y oportunidad de superación</p>
+                <div class="threeColumnsBox__text">
+                    <img class="projectsLogo" src="/sources/logo_latravesiasocial.png" alt="">
+                    <p class="smallText">Recorremos lugares remotos de Colombia habitados por población vulnerable, mostrando a través del ejemplo, al deporte del ciclismo como un estilo de vida y una oportunidad de superación.</p>
                 </div>
             </div>
 
-            <div class="threeColumns projects__farallones">
-                <div class="threeColumns__img">
+            <div class="threeColumnsBox projects__farallones">
+                <div class="threeColumnsBox__img">
                     <img src="/sources/farallonesImg.png" alt="">
                 </div>
-                <div class="threeColumns__text">
-                    <h1 class="smallTittle">Farallones</h1>
-                    <p class="text">Promovemos la conservación del agua en la cuenca alta del Río Cali mediante el trabajo social de jóvenes campesinos tomando el deporte como eje principal de su formación y el rescate de sus valores.</p>
+                <div class="threeColumnsBox__text">
+                    <img class="projectsLogo" src="/sources/logo_farallones.png" alt="">
+                    <p class="smallText">Promovemos la conservación del agua en la cuenca alta del Río Cali mediante el trabajo social de jóvenes campesinos tomando el deporte como eje principal de su formación y el rescate de sus valores.</p>
                 </div>
             </div>
 
-            <div class="threeColumns projects__biciclaje">
-                <div class="threeColumns__img">
+            <div class="threeColumnsBox projects__biciclaje">
+                <div class="threeColumnsBox__img">
                     <img src="/sources/biciclajeImg.png" alt="">
                 </div>
-                <div class="threeColumns__text">
-                    <h1 class="smallTittle">Biciclaje</h1>
-                    <p class="text">Recolectamos y acondicionamos bicicletas y repuestos en desuso para ser utilizados en los programas que vinculan a niños, niñas y jóvenes de comunidades vulnerables del país</p>
+                <div class="threeColumnsBox__text">
+                    <img class="projectsLogo" src="/sources/logo_biciclaje.png" alt="">
+                    <p class="smallText">Recolectamos y acondicionamos bicicletas y repuestos en desuso para ser utilizados en los programas que vinculan a niños, niñas y jóvenes de comunidades vulnerables del país.</p>
                 </div>
             </div>
         </div>
@@ -72,12 +78,15 @@
         
         <div class="projects__newProject">
             <div class="projects__tittle">
-                <!-- <h1 class="mediumTittle">Último proyecto </h1> -->
-                <img class="imgTittle" src="/sources/ultimoProyectoImg.png" alt="">
+                <h1 class="mediumTittle">Último proyecto </h1>
+                <!-- <img class="imgTittle" src="/sources/ultimoProyectoImg.png" alt=""> -->
             </div>
             <div class="oneColumnFullImg projects__caminoRealPanam">
-                <h1 class="smallTittle">Camino Real Panamericano</h1>
-                <p class="whitebgText">Sistema arterial que transporta al "caminante" a descubrirse a si mismo, inmerso en las obras maestras de la naturaleza, la historia, la arquitectura y la cultura Americana.</p>
+                <h1 class="whiteSmallTittle">Camino Real Panamericano</h1>
+                <p class="whiteMediumText">Sistema arterial que transporta al "caminante" a descubrirse a si mismo, inmerso en las obras maestras de la naturaleza, la historia, la arquitectura y la cultura Americana.
+                    
+                La COMUNIDAD DEL CAMINO ofrece al “caminante” todo lo necesario para que cada experiencia impacte positivamente su vida y le permita encontrar “su nueva versión”.
+                </p>
             </div>
         </div>
     </div>
@@ -85,15 +94,15 @@
     <div class="testimonies">
 
         <div class="testimonies__tittle">
-            <!-- <h1 class="mediumTittle">Testimonios</h1> -->
-            <img class="imgTittle" src="/sources/testimonioImg.png" alt="">
+            <h1 class="mediumTittle">Testimonios</h1>
+            <!-- <img class="imgTittle" src="/sources/testimonioImg.png" alt=""> -->
         </div>
 
         <div class="oneColumnBox">
             <div class="oneColumnBox__text ">
                 <h1 class="smallTittle">Beto Ambrosio</h1>
                 <p class="redText testimonies__personalInfo">Autor del libro “ Fé latina - Un recorrido en bicicleta por América Latina”</p>
-                <p class="text">“Agradezco, en nombre de nuestro continente, por generar soñadores, por poner amor y esperanza en el corazón de tantos niños. Que ese proyecto se esparza por el mundo cada día más generando una epidemia de apasionados por la bicicleta, quiero decir, por la vida”.</p>
+                <p class="smallText">“Agradezco, en nombre de nuestro continente, por generar soñadores, por poner amor y esperanza en el corazón de tantos niños. Que ese proyecto se esparza por el mundo cada día más generando una epidemia de apasionados por la bicicleta, quiero decir, por la vida”.</p>
             </div>
             <div class="oneColumnBox__img projects__redesimg">
                 <img src="/sources/betoTestimonio.png" alt="">
@@ -101,44 +110,43 @@
         </div>
 
         <div class="testimonies__threetestimonies">
-            <div class="threeColumns testimonies__testimonieOne">
-                <div class="threeColumns__img">
+            <div class="threeColumnsBox testimonies__testimonieOne">
+                <div class="threeColumnsBox__img">
                     <img src="/sources/gabrielaTestimonio.png" alt="">
                 </div>
-                <div class="threeColumns__text">
+                <div class="threeColumnsBox__text">
                     <h1 class="smallTittle">Gabriela Gutiérrez</h1>
                     <p class="redText testimonies__personalInfo">10 Años</p>
-                    <p class="text">“El deporte me ha ayudado a ser más obediente y a cumplir con mis deberes. Me siento feliz cuando estoy montando cicla”.</p>
+                    <p class="smallText">“El deporte me ha ayudado a ser más obediente y a cumplir con mis deberes. Me siento feliz cuando estoy montando cicla”.</p>
                 </div>
             </div>
 
-            <div class="threeColumns testimonies__testimonieTwo">
-                <div class="threeColumns__img">
+            <div class="threeColumnsBox testimonies__testimonieTwo">
+                <div class="threeColumnsBox__img">
                     <img src="/sources/danielTestimonio.png" alt="">
                 </div>
-                <div class="threeColumns__text">
+                <div class="threeColumnsBox__text">
                     <h1 class="smallTittle">Daniel Avellaneda</h1>
                     <p class="redText testimonies__personalInfo">20 Años</p>
-                    <p class="text">“Gracias al apoyo de la fundación y sus profesionales hemos podido estar en las mejores competencias del calendario nacional e internacional”.</p>
+                    <p class="smallText">“Gracias al apoyo de la fundación y sus profesionales hemos podido estar en las mejores competencias del calendario nacional e internacional”.</p>
                 </div>
             </div>
 
-            <div class="threeColumns testimonies__testimonieThree">
-                <div class="threeColumns__img">
+            <div class="threeColumnsBox testimonies__testimonieThree">
+                <div class="threeColumnsBox__img">
                     <img src="/sources/marcelaTestimonio.png" alt="">
                 </div>
-                <div class="threeColumns__text">
+                <div class="threeColumnsBox__text">
                     <h1 class="smallTittle">Marcela Manrique</h1>
                     <p class="redText testimonies__personalInfo">10 Años</p>
-                    <p class="text">“La fundación me ha ayudado a ser más feliz, a compartir más, a cada día ser mejor y a ayudar a los demás”.</p>
+                    <p class="smallText">“La fundación me ha ayudado a ser más feliz, a compartir más, a cada día ser mejor y a ayudar a los demás”.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="participations">
+    <!-- <div class="participations">
         <div class="participations__tittle">
-            <!-- <h1 class="mediumTittle">Último proyecto </h1> -->
             <img class="imgTittle" src="/sources/participacionesImg.png" alt="">
         </div>
         <div class="oneColumnFullImg participations__content">
@@ -151,39 +159,39 @@
                 <p class="whitebgText participations__contentText">Vuelta de la Juventud 2016 </p>
                 <p class="whitebgText participations__contentText">1a Vuelta de Nariño 2016 </p>
                 <p class="whitebgText participations__contentText">20a Edición de la vuelta Internacional del Porvenir Guatemala 2015 </p>
-                <!-- <br>
+                <br>
                 <br>
                 Tercer puesto Vuelta a Nariño 2016 <br>
-                Travesía para surcar el país de sur a norte en 20 días</p> -->
+                Travesía para surcar el país de sur a norte en 20 días</p>
         </div>
-    </div>
+    </div> -->
 
     <div class="contact" id="contact">
 
         <div class="contact__tittle">
-            <!-- <h1 class="mediumTittle">Contáctanos</h1> -->
-            <img class="imgTittle" src="/sources/contactoImg.png" alt="">
+            <h1 class="mediumTittle">Contáctanos</h1>
+            <!-- <img class="imgTittle" src="/sources/contactoImg.png" alt=""> -->
         </div>
 
         <div class="oneColumnBox contact__container">
 
             <div class="oneColumnBox__text contact__containerForm">
                 <p class="redText contact__containerTittle">¿Te conectaste con alguna de nuestras iniciativas?</p>
-                <p class="text contact__containerText">Escríbenos</p>
-                <p class="text contact__containerText">José Milo Lopez Renza | Gerente de proyectos</p>
-                <p class="text contact__containerText">info@colombianuestrameta.com</p>
-                <!-- <form method="post" name="myemailform" action="form-to-email.php">
-                    <p class="text">Nombre completo*:</p> 
-                    <input class="textInput" type="text" name="name">
+                <!-- <p class="mediumText contact__containerText">Escríbenos</p>
+                <p class="mediumText contact__containerText">José Milo Lopez Renza | Gerente de proyectos</p>
+                <p class="mediumText contact__containerText">info@colombianuestrameta.com</p> -->
+                <form method="POST" name="myemailform" action="form-to-email.php">
+                    <p class="smallText">Nombre completo*:</p> 
+                    <input required class="textInput" type="text" name="name">
                     <br>
-                    <p class="text">Correo electrónico*:</p>
-                    <input class="textInput" type="text" name="email">
+                    <p class="smallText">Correo electrónico*:</p>
+                    <input required class="textInput" type="email" name="email">
                     <br>
-                    <p class="text">Mensaje:</p>
-                    <textarea class="textArea"  name="message"></textarea>
+                    <p class="smallText">Mensaje:</p>
+                    <textarea class="textArea" name="message"></textarea>
                     <br>
-                    <input class="ctaButton" type="submit" value="Enviar">
-                </form> -->
+                    <input class="ctaButton" type="submit" name="submit" value="Enviar">
+                </form>
             </div>
             <div class="oneColumnBox__img contact__containerImg">
                 <img src="/sources/contactanosImg.png" alt="">
@@ -194,7 +202,7 @@
     </div>
     <div class="footer">
         <div class="footer__container">
-            <p class="whiteText">Visita nuestras redes</p>
+            <p class="whiteSmallText">Visita nuestras redes</p>
             <div class="footer__socialMedia">
                 <a href="https://www.facebook.com/Colombia-Nuestra-Meta-150190398342307/">
                     <img src="/sources/fbLogo.png" alt="">
@@ -203,8 +211,7 @@
                     <img src="/sources/igLogo.png" alt="">
                 </a>
             </div>
-            <p class="whiteText">Diseñado por Natalieth Perdomo</p>
-            <p class="whiteText">Desarrollado por Karen Castañeda</p>
+            <p class="whiteSmallText">Diseñado y desarrollado por Karen Castañeda</p>
         </div>
     </div>
     
