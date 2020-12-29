@@ -13,18 +13,17 @@ body{
     padding: 0px;
 }
 
-div{
+ div{
     overflow:hidden
-}
+} 
 
 .ctaButton{
-    margin: 20px;
     font-family: Lato;
     font-style: normal;
     font-weight: 500;
     font-size: 40px;
     width: 250px;
-    height: 65px;
+    height: 55px;
     background: none;
     border: none;
     background-color: #ED3636;
@@ -70,9 +69,10 @@ form{
     font-family: Lato;
     font-style: normal;
     font-weight: bold;
-    font-size: 80px;
+    font-size: 60px;
     color: #004A7D;
     line-height: 80%;
+    margin: 0px;
 }
 
 .mediumTittle{
@@ -107,7 +107,7 @@ form{
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 20px;
     color: #195479;
 }
 
@@ -157,7 +157,7 @@ form{
 }
 
 .projectsLogo{
-    height: 30%;
+    height: 25%;
 }
 
 /*--------------------- One Column Box ---------------------*/
@@ -198,17 +198,27 @@ form{
 
 }
 
+.oneColumnFullImg{
+    width: 100%;
+    height: 500px;
+}
+
 /*--------------------- Three Columns ---------------------*/
 
+.threeColumnsBoxContainer{
+    display: flex;
+    justify-content: center;
+}
+
 .threeColumnsBox{
+    display: flex;
+    flex-direction: column;
     margin: 45px;
     box-shadow: 4px 4px 8px rgba(150, 150, 150, 0.25), -4px -4px 8px rgba(150, 150, 150, 0.25);
     border-radius: 20px;
     width: 22%;
     height: 400px;
     min-width: 300px;
-    display: flex;
-    flex-direction: column;
 }
 
 .threeColumnsBox__img{
@@ -220,6 +230,7 @@ form{
 .threeColumnsBox__img img{
     width: 100%;
     height: auto;
+    border-radius: 20px;
 }
 
 .threeColumnsBox__text{
@@ -246,15 +257,16 @@ form{
 
 .firstScreen__content{
     display: flex;
-
 }
 
 .firstScreen__contentInfo{
     order: 1;
     width: 45%;
-    height: 80%;
     padding: 50px 0px 0px 100px;
-    margin-top: 120px; 
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .firstScreen__contentInfoTittle{
@@ -295,20 +307,12 @@ form{
     align-items: center;
 }
 
-.projects__threeprojects{
-    display: flex;
-    justify-content: center;
-}
-
 .projects__newProject{
     width: 100%;
     padding-bottom: 40px;
 }
 
 .projects__caminoRealPanamContainer{
-    width: 100%;
-    height: 500px;
-    margin: 0 auto;
     margin-top: 40px;
     background-image: url("/sources/caminoRealPanamericanoFondo.png");
     background-size: cover;
@@ -337,11 +341,6 @@ form{
     align-items: center;
 }
 
-.testimonies__threetestimonies{
-    display: flex;
-    justify-content: center;
-}
-
 .testimonies__personalInfo{
     font-size: 16px;
 }
@@ -352,20 +351,6 @@ form{
     padding-bottom: 40px;
 }
 
-.participations__content{
-    width: 80%;
-    height: 500px;
-    margin: 0 auto;
-    margin-top: 40px;
-    background-image: url("/sources/participationsImg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 50px;
-    box-shadow: 4px 4px 8px rgba(150, 150, 150, 0.25), -4px -4px 8px rgba(150, 150, 150, 0.25);
-
-}
-
 .participations__tittle{
     width: 100%;
     padding: 0px;
@@ -374,9 +359,26 @@ form{
     align-items: center;
 }
 
-.participations__contentText{
-    width: fit-content;
-    margin: 0px;
+.participations__img{
+    margin-top: 40px;
+    background-image: url("/sources/participationsImg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.participations p{
+    text-align: center;
+}
+
+.participations__participation{
+    padding: 20px;
+}
+
+.participations__participationRedTittle{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 /*--------------------- Contact ---------------------*/
@@ -472,7 +474,6 @@ form{
     }
 
     .ctaButton{
-        margin: 20px;
         padding: 5px 20px;
         font-size: 20px;
         color: white;
@@ -552,29 +553,19 @@ form{
 
     /*--------------------- Three Columns ---------------------*/
 
+    .threeColumnsBoxContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+
     .threeColumnsBox{
+        display: flex;
+        flex-direction: column;
         margin: 45px;
         box-shadow: 4px 4px 8px rgba(150, 150, 150, 0.25), -4px -4px 8px rgba(150, 150, 150, 0.25);
         width: 60%;
         height: 400px;
-        display: flex;
-        flex-direction: column;
     }
-
-    .threeColumns__img{
-        width: 100%;
-        height: 40%;
-    }
-
-    .threeColumns__img img{
-        width: 100%;
-        height: auto;
-    }
-
-    .threeColumns__text{
-        text-align: center;
-    }
-
     /*--------------------- FirstScreen ---------------------*/
 
 
@@ -597,11 +588,12 @@ form{
         width: 100%;
         height: 85%;
         margin: 0px;
-        padding: 50px 60px 0px 60px; 
+        padding: 50px 60px 0px 60px;
+        align-items: center; 
     }
     
     .firstScreen__contentInfoTittle{
-        width: 70%;
+        width: 100%;
         margin: 0px auto;
         text-align: center;
     }
@@ -623,25 +615,12 @@ form{
     }
 
     /*--------------------- Projects ---------------------*/
-
-    .projects__threeprojects{
-        flex-direction: column;
-        align-items: center;
-    }
     
     .projects__caminoRealPanam{
         width: 80%;
         margin: 40px;
     }
     
-
-    /*--------------------- Testimonies ---------------------*/
-
-    .testimonies__threetestimonies{
-        flex-direction: column;
-        align-items: center;
-    }
-
     /*--------------------- Contact ---------------------*/
 
     .contact{
